@@ -1,0 +1,41 @@
+# ========================
+# 1. Python & Entorno
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+.venv
+
+# ========================
+# 2. Django Específico
+# ========================
+*.sqlite3
+db.sqlite3
+local_settings.py
+
+# ========================
+# 3. Archivos Estáticos y Media (CRÍTICO)
+# ========================
+# Contiene los PDFs de evidencias (INE, Títulos) que subas en pruebas.
+# NO subir esto protege la privacidad y el peso del repo.
+media/
+
+# Carpeta donde Django recolecta estáticos para producción (si corres collectstatic)
+staticfiles/
+static_root/
+
+# ========================
+# 4. Entorno de Desarrollo / IDEs
+# ========================
+.vscode/
+.idea/
+*.swp
+
+# ========================
+# 5. Sistema Operativo
+# ========================
+.DS_Store
+Thumbs.db
